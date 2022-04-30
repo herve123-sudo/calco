@@ -1,0 +1,77 @@
+body{
+	background-image: url(IMG_20200209_141045_122.JPG);
+	background-size: cover;
+}
+
+*{
+	margin: 0px ;
+	padding: 0px ;
+}
+.button{
+	width: 40px;
+	height: 30px;
+	font-size: 15px;
+	margin: 4px;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+
+}
+.textview {
+	width: 366px;
+	margin: 10px;
+	font-size:40px;
+	padding: 5px;
+	border: 5px solid black;
+	background-color: white;
+	border-color: black;
+	text-align: right;
+}
+
+.main {
+	width: 400px;
+	height: 328px;
+	background-color:#293133 ;
+	position: absolute;
+	top: 50% ;
+	left: 50% ;
+	transform: translateX(-50%)translateY(-50%); 
+	border: 3px solid #CCCCCC;
+	border-radius: 10px;
+	border-top-width: 16px;
+}
+.symbol{
+	background-color: #CCCCCC;
+	color: black;
+
+}
+
+.symbol1{
+	width: 40px;
+	height: 30px;
+	font-size: 15px;
+	margin: 4px;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	background-color:#33FF99;
+
+}
+.symbol2{
+	width: 40px;
+	height: 30px;
+	font-size: 15px;
+	margin: 4px;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	background-color:#FF9933;
+}
+
+.gray:hover {
+	background-color: #e0e0e0 ;
+}
+
+.blue:hover{
+	background-color: blue;
+}

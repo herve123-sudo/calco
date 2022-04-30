@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculatrice</title>
+	<link rel="stylesheet" type="text/css" href="calco.css">
+
+</head>
+<body>
+	<div class="main">
+		<form name="myForm">
+			<input type="text" name="textview" class="textview" disabled>
+		</form>
+		<table>
+			
+				<tr>
+					<td><input type="button"  class = "symbol1" value="Deg" onclick="SR('r')"  id="r"></td>
+					<td><input type="button"  class = "symbol1" value="("  onclick="insertop('(')"></td>
+					<td><input type="button"  class = "symbol1" value=")"  onclick="insertop(')')"></td>
+					<td><input type="button"  class = "symbol1" value="%"  onclick="insertop('%')"></
+						td>
+					<td><input type="button"  class = " symbol2" value="MC"  onclick="insertop('')"></td>
+					<td><input type="button"  class = "symbol2" value="M+"  onclick="insertop('')"></td>
+					<td><input type="button"  class = "symbol2" value="M-"  onclick="insertop('')"></td>
+					<td><input type="button"  class = "symbol2" value="MR"  onclick="insertop('')"></td>
+					
+				</tr>
+				<tr>
+					<td><input type="button"  class = "symbol1" value="1/x" onclick="SR('')"  id="s"></td>
+					<td><input type="button"  class = "symbol1" value="x²" onclick="SR('s')"  id="s"></td>
+					<td><input type="button"  class = "symbol1" value="x³" onclick="SR('s')"  id="s"></td>
+					<td><input type="button"  class = "symbol1" value="yx " onclick="SR('')"  id="s"></td>
+					<td><input type="button"  class = "symbol1" value="C" onclick="clean()"></td>
+					<td><input type="button"  class = "symbol1" value="+/- " onclick="SR('')"  id="s"></td>
+					<td><input type="button"  class = " symbol1" value="÷"  onclick="insertop('÷')"></td>
+					<td><input type="button"  class = " symbol1" value="x"  onclick="insertop('*')"></td>
+					
+				</tr>
+				<tr>
+					<td><input type="button"  class = "symbol1" value="X!" onclick="SR('')"  id="s"></td>
+					<td><input type="button"  class = "symbol1" value="√" onclick="SR('√')"  id="s"></td>
+					<td><input type="button"  class = "symbol1" value="√y" onclick="SR('')"  id="s"></td>
+					<td><input type="button"  class = "symbol1" value="log" onclick="SR('log')"  id="s"></td>
+					<td><input type="button"  class = "button gray symbol" value="7" onclick="insertNum(7)"></td>
+					<td><input type="button"  class = "button gray symbol" value="8" onclick="insertNum(8)"></td>
+					<td><input type="button"  class = "button gray symbol" value="9" onclick="insertNum(9)"></td>
+					<td><input type="button"  class = " symbol1" value="-"  onclick="insertop('-')"></td>
+				</tr>
+
+
+				<tr>
+					
+					<td><input type="button"  class = "symbol1" value="sin"  onclick="insertop('sin')"></td>
+					<td><input type="button"  class = "symbol1" value="cos"  onclick="insertop('cos')"></td>
+					<td><input type="button"  class = "symbol1" value="tan"  onclick="insertop('tan')"></td>
+					<td><input type="button"  class = "symbol1" value="ln"  onclick="insertop('ln')"></td>
+					<td><input type="button"  class = "button gray symbol" value="4" onclick="insertNum(4)"></td>
+					<td><input type="button"  class = "button gray symbol" value="5" onclick="insertNum(5)"></td>
+					<td><input type="button"  class = "button gray symbol" value="6" onclick="insertNum(6)"></td
+					><td><input type="button"  class = " symbol1" value="+"  onclick="insertop('+')"></td>
+					
+
+				</tr>
+
+
+				<tr>
+					
+					<td><input type="button"  class = "symbol1" value="sinh"  onclick="insertop('sinh')"></td>
+					<td><input type="button"  class = "symbol1" value="cosh"  onclick="insertop('cosh')"></td>
+					<td><input type="button"  class = "symbol1" value="tanh"  onclick="insertop('tanh')"></td>
+					<td><input type="button"  class = "symbol1" value="eX"  onclick="insertop('eX')"></td><td><input type="button"  class = "button gray symbol" value="1"onclick="insertNum(1)"></td>
+					<td><input type="button"  class = "button gray symbol" value="2"onclick="insertNum(2)"></td>
+					<td><input type="button"  class = "button gray symbol" value="3"onclick="insertNum(3)"></td>
+					 <td><input type="button"  class = "symbol2" value="&#x232B;" onclick="back()"></td> 
+				</tr>
+				
+				<tr>
+					<td><input type="button"  class = "symbol1" value="1st"onclick="insertop('')"></td>
+					<td><input type="button"  class = "symbol1" value="π"onclick="insertop('3.14')"></td>
+					<td><input type="button"  class = "symbol1" value="EE"onclick="insertop('')"></td>
+					<td><input type="button"  class = "symbol1" value="rnd"onclick="insertop('')"></td>
+					<td><input type="button"  class = "button gray symbol" value="0"onclick="insertNum(0)"></td>
+					<td><input type="button"  class = "symbol1" value="." onclick="insertDec()"></td>
+					<td><input type="button"  class = "symbol1" value="ans"onclick="insertop('')"></td>
+					<td><input type="button"  class = "symbol1" value="=" onclick="equalTo()"></td>
+				</tr>
+			
+		</table>
+		
+	</div>
+	<script src="calco.js" type="text/javascript" ></script>
+
+</body>
+</html>
